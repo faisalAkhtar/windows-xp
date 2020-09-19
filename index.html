@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        @font-face {
+            font-family: "segoe-ui";
+            src: url('segoe-ui.ttf')
+        }
+        @font-face {
+            font-family: "arial";
+            src: url('arial-black.ttf')
+        }
+        * {
+            box-sizing: border-box;
+        }
+        body {
+            font-size: 18px;
+            font-family: 'segoe-ui', serif;
+            margin: 0;
+            background-color: black;
+            color: #EFEFEF;
+            position: relative;
+            height: 100vh;
+            width: 100vw;
+            overflow: hidden;
+        }
+        .centred {
+            width: 20%;
+            height: auto;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+        .logo {
+            width: 100%;
+        }
+        .loader {
+            position: relative;
+            margin: 5% 15%;
+            width: 66.67%;
+            max-height: 20px;
+            height: 2vh;
+            padding: 3px 2px;
+            border: 1px solid #EFEFEF;
+            border-radius: 0.5vh;
+            overflow: hidden;
+        }
+        .loader span {
+            display: block;
+            float: left;
+            margin: 0 1px 3px;
+            height: 12px;
+            width: 8px;
+            background-color: #708CF1;
+            background: linear-gradient(#708CF1 0%,#708CF1 40%,#2838C7 70%,#2838C7 100%);
+        }
+        .title {
+            font-family: 'arial', serif;
+            position: absolute;
+            bottom: 12.5%;
+            right: 7.5%;
+            font-weight: bold;
+            font-style: italic;
+        }
+        .copy {
+            position: absolute;
+            bottom: 12.5%;
+            left: 7.5%;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="centred">
+        <img src="logo2.png" class="logo">
+        <div class="loader">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+    </div>
+    <div class="copy">Copyright &copy; Microsoft Corporation</div>
+    <div class="title">Microsoft</div>
+
+    <script>
+        let x = 1;
+        let int = setInterval( ()=> {
+            if(x==document.querySelector(".loader").offsetWidth) x = 0
+            x += 1
+            document.querySelectorAll(".loader span")[0].style.marginLeft = x + "px"
+        }, 10);
+
+        // setTimeout( ()=>{ clearInterval(int) }, 5000)
+    </script>
+</body>
+</html>
