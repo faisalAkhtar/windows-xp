@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- <meta name="viewport" content="width=device-width, initial-scale=1.0"> -->
     <title>Document</title>
     <style>
         @font-face {
@@ -10,7 +10,7 @@
             src: url('segoe-ui.ttf')
         }
         @font-face {
-            font-family: "arial";
+            font-family: "arial-black";
             src: url('arial-black.ttf')
         }
         * {
@@ -28,7 +28,7 @@
             overflow: hidden;
         }
         .centred {
-            width: 20%;
+            /* width: 25%; */
             height: auto;
             position: absolute;
             top: 50%;
@@ -36,7 +36,35 @@
             transform: translate(-50%, -50%);
         }
         .logo {
-            width: 100%;
+            width: 380px;
+            height: 300px;
+            line-height: 1;
+        }
+        .logo .ms {
+            font-size: 150%;
+        }
+        .logo .ms sup {
+            font-size: 40%;
+            font-weight: bold;
+        }
+        .logo .win {
+            font-size: 400%;
+            font-weight: bold;
+            float: left;
+            margin-right: 10px;
+            margin-top: -10px;
+        }
+        .logo .xp {
+            font-size: 300%;
+            font-weight: bold;
+            color: #FF3300;
+            float: left;
+            margin-top: -20px;
+        }
+        .logo img {
+            width: 66.67%;
+            display: block;
+            margin: 0 auto -30px;
         }
         .loader {
             position: relative;
@@ -53,13 +81,14 @@
             display: block;
             float: left;
             margin: 0 1px 3px;
-            height: 12px;
+            height: calc(2vh - 6px);
+            max-height: 12px;
             width: 8px;
             background-color: #708CF1;
             background: linear-gradient(#708CF1 0%,#708CF1 40%,#2838C7 70%,#2838C7 100%);
         }
         .title {
-            font-family: 'arial', serif;
+            font-family: 'arial-black', serif;
             position: absolute;
             bottom: 12.5%;
             right: 7.5%;
@@ -76,7 +105,13 @@
 
 <body>
     <div class="centred">
-        <img src="logo2.png" class="logo">
+        <div class="logo">
+            <img src="logo.svg">
+            <!-- <span>™</span> -->
+            <div class="ms">Microsoft<sup>®</sup></div>
+            <div class="win">Windows</div>
+            <div class="xp">xp</div>
+        </div>
         <div class="loader">
             <span></span>
             <span></span>
