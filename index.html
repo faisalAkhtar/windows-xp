@@ -28,7 +28,8 @@
             overflow: hidden;
         }
         .centred {
-            /* width: 25%; */
+            width: 50%;
+            max-width: 380px;
             height: auto;
             position: absolute;
             top: 50%;
@@ -36,8 +37,7 @@
             transform: translate(-50%, -50%);
         }
         .logo {
-            width: 380px;
-            height: 300px;
+            overflow: hidden;
             line-height: 1;
         }
         .logo .ms {
@@ -68,20 +68,20 @@
         }
         .loader {
             position: relative;
-            margin: 5% 15%;
+            margin: 10% 15% 5%;
             width: 66.67%;
             max-height: 20px;
-            height: 2vh;
+            height: 3vh;
             padding: 3px 2px;
             border: 1px solid #EFEFEF;
-            border-radius: 0.5vh;
+            border-radius: 4px;
             overflow: hidden;
         }
         .loader span {
             display: block;
             float: left;
             margin: 0 1px 3px;
-            height: calc(2vh - 6px);
+            height: calc(3vh - 6px);
             max-height: 12px;
             width: 8px;
             background-color: #708CF1;
@@ -107,7 +107,6 @@
     <div class="centred">
         <div class="logo">
             <img src="logo.svg">
-            <!-- <span>™</span> -->
             <div class="ms">Microsoft<sup>®</sup></div>
             <div class="win">Windows</div>
             <div class="xp">xp</div>
