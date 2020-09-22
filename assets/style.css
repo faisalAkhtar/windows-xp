@@ -2,13 +2,16 @@
     font-family: "segoe-ui";
     src: url('segoe-ui.ttf')
 }
+
 @font-face {
     font-family: "arial-black";
     src: url('arial-black.ttf')
 }
+
 * {
     box-sizing: border-box;
 }
+
 body {
     font-size: 18px;
     font-family: 'segoe-ui', serif;
@@ -20,6 +23,7 @@ body {
     width: 100vw;
     overflow: hidden;
 }
+
 .centred {
     width: 50%;
     max-width: 380px;
@@ -29,17 +33,21 @@ body {
     left: 50%;
     transform: translate(-50%, -50%);
 }
+
 .logo {
     overflow: hidden;
     line-height: 1;
 }
+
 .logo .ms {
     font-size: 150%;
 }
+
 .logo .ms sup {
     font-size: 40%;
     font-weight: bold;
 }
+
 .logo .win {
     font-size: 400%;
     font-weight: bold;
@@ -47,6 +55,7 @@ body {
     margin-right: 10px;
     margin-top: -10px;
 }
+
 .logo .xp {
     font-size: 300%;
     font-weight: bold;
@@ -54,11 +63,13 @@ body {
     float: left;
     margin-top: -20px;
 }
+
 .logo img {
     width: 66.67%;
     display: block;
     margin: 0 auto -30px;
 }
+
 .loader {
     position: relative;
     margin: 10% 15% 5%;
@@ -70,6 +81,7 @@ body {
     border-radius: 4px;
     overflow: hidden;
 }
+
 .loader span {
     display: block;
     float: left;
@@ -78,8 +90,9 @@ body {
     max-height: 12px;
     width: 8px;
     background-color: #708CF1;
-    background: linear-gradient(#708CF1 0%,#708CF1 40%,#2838C7 70%,#2838C7 100%);
+    background: linear-gradient(#708CF1 0%, #708CF1 40%, #2838C7 70%, #2838C7 100%);
 }
+
 .title {
     font-family: 'arial-black', serif;
     position: absolute;
@@ -88,6 +101,7 @@ body {
     font-weight: bold;
     font-style: italic;
 }
+
 .copy {
     position: absolute;
     bottom: 12.5%;
