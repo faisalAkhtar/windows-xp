@@ -2,28 +2,32 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Windows 10</title>
+    <title>Windows XP</title>
     <link rel="shortcut icon" href="assets/logo.svg">
-    <link rel="stylesheet" type="text/css" href="assets/style.css">
+    <style>
+        body {
+            margin: 0;
+            width: 100vw;
+            height: 100vh;
+        }
+        iframe {
+            width: 100%;
+            height: 100%;
+            position: absolute;
+            top: 0;
+            left: 0;
+            border: none;
+        }
+    </style>
 </head>
 
 <body>
-    <div class="centred">
-        <div class="logo">
-            <img src="assets/logo.svg">
-            <div class="ms">Microsoft<sup>®</sup></div>
-            <div class="win">Windows</div>
-            <div class="xp">xp</div>
-        </div>
-        <div class="loader">
-            <span></span>
-            <span></span>
-            <span></span>
-        </div>
-    </div>
-    <div class="copy">Copyright &copy; Microsoft Corporation</div>
-    <div class="title">Microsoft</div>
-
-    <script src="assets/loader.js"></script>
+    <iframe id="desktop" iframe src="desktop.html" title="Desktop"></iframe>
+    <iframe id="loading" iframe src="loading.html" title="Loading"></iframe>
+    <script>
+        setTimeout(() => {
+            document.querySelector("#loading").remove()
+        }, 5000);
+    </script>
 </body>
 </html>
