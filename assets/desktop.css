@@ -1,0 +1,92 @@
+@font-face {
+    font-family: "segoe-ui";
+    src: url('segoe-ui.ttf')
+}
+
+@font-face {
+    font-family: "arial-black";
+    src: url('arial-black.ttf')
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-size: 18px;
+    font-family: 'segoe-ui', serif;
+    margin: 0;
+    padding: 12px;
+    color: #ffffff;
+    background-position: center 16.67%;
+    background-image: url('desktop-bg.jpg');
+    background-size: cover;
+}
+
+.taskbar {
+    background-color: #245EDC;
+    background: linear-gradient(to bottom, #245EDC 0%, #3f8cf3 9%, #245EDC 18%, #245EDC 92%, #1941A5 100%) center/cover no-repeat;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 32px;
+}
+
+.start-button {
+    height: 100%;
+    float: left;
+    font-size: 22px;
+    line-height: 22px;
+    font-weight: bold;
+    font-style: italic;
+    background: radial-gradient(circle, #5eac56 0%, #3c873c 100%) center/cover no-repeat;
+    box-shadow: 0px 5px 10px #79ce71 inset, 4px 0 8px #3f8cf3;
+    padding: 2px 25px 6px 10px;
+    text-shadow: 1px 1px 3px #222;
+    border-radius: 0px 8px 8px 0px;
+    cursor: pointer;
+}
+
+.start-button img {
+    height: 20px;
+    filter: drop-shadow(1px 1px 1px #222);
+    transform: translateY(4px);
+}
+
+.time {
+    height: 100%;
+    float: right;
+    font-family: monospace;
+    font-size: 14px;
+    line-height: 14px;
+    background: linear-gradient(to bottom, #1290E9 0%, #19B9F3 9%, #1290E9 18%, #1290E9 92%, #1941A5 100%) center/cover no-repeat;
+    box-shadow: 0px 5px 10px #14A5F0 inset, 0px 5px 10px #333333;
+    padding: 9px 15px 9px 25px;
+    border-left: 1px solid #092E51;
+    text-shadow: 1px 1px 2px #222;
+    cursor: pointer;
+}
+
+.icon {
+    width: 90px;
+    cursor: pointer;
+    margin: 12px 0 20px;
+}
+
+.icon img {
+    width: 54px;
+    display: block;
+    margin: 0 auto;
+}
+
+.icon .icon-name {
+    font-size: 14px;
+    text-align: center;
+}
+
+.recycle-bin {
+    position: absolute;
+    right: 8px;
+    bottom: calc(32px + 16px);
+}
