@@ -3,6 +3,10 @@
 Replicating the awesome Windows XP with web tools.
 
 ![Windows XP splash screen](windows-xp-splash-screen.png)
+Splash screen
+
+![Windows XP desktop screen](windows-xp-desktop-screen.png)
+Desktop
 
 All rights reserved to [Microsoft&reg;](https://www.microsoft.com/en-in)
 
