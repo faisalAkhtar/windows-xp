@@ -1,13 +1,3 @@
-@font-face {
-    font-family: "segoe-ui";
-    src: url('segoe-ui.ttf')
-}
-
-@font-face {
-    font-family: "arial-black";
-    src: url('arial-black.ttf')
-}
-
 * {
     box-sizing: border-box;
 }
@@ -19,7 +9,6 @@ body {
     padding: 12px;
     color: #ffffff;
     background-position: center 16.67%;
-    background-image: url('desktop-bg.jpg');
     background-size: cover;
 }
 
@@ -89,4 +78,16 @@ body {
     position: absolute;
     right: 8px;
     bottom: calc(32px + 16px);
+}
+
+@media (orientation: landscape) {
+    body {
+        background-image: url('desktop-bg.jpg');
+    }
+}
+
+@media (orientation: portrait) {
+    body {
+        background-image: url('desktop-bg-portrait.jpg');
+    }
 }

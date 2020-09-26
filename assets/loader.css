@@ -1,13 +1,3 @@
-@font-face {
-    font-family: "segoe-ui";
-    src: url('segoe-ui.ttf')
-}
-
-@font-face {
-    font-family: "arial-black";
-    src: url('arial-black.ttf')
-}
-
 * {
     box-sizing: border-box;
 }

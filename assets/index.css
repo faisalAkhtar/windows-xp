@@ -1,5 +1,16 @@
+@font-face {
+    font-family: "segoe-ui";
+    src: url('segoe-ui.ttf')
+}
+
+@font-face {
+    font-family: "arial-black";
+    src: url('arial-black.ttf')
+}
+
 body {
     margin: 0;
+    font-family: 'segoe-ui', sans-serif;
     width: 100vw;
     height: 100vh;
     background-color: black;
