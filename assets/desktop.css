@@ -55,6 +55,7 @@ body {
     border-left: 1px solid #092E51;
     text-shadow: 1px 1px 2px #222;
     cursor: pointer;
+    text-transform: uppercase;
 }
 
 .icon {
