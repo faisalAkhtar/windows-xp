@@ -14,13 +14,25 @@ window.onload = function() {
 
     setTimeout(() => {
         iframe = document.createElement("iframe");
-        iframe.id = "desktop"
-        iframe.src = "desktop.html"
-        iframe.title = "Desktop"
+        iframe.id = "welcome"
+        iframe.src = "welcome.html"
+        iframe.title = "Welcome"
         document.querySelector("body").prepend(iframe);
 
         iframe.onload = function () {
             document.querySelector("#loading").remove()
         }
+
+        setTimeout(() => {
+            iframe = document.createElement("iframe");
+            iframe.id = "desktop"
+            iframe.src = "desktop.html"
+            iframe.title = "Desktop"
+            document.querySelector("body").prepend(iframe);
+    
+            iframe.onload = function () {
+                document.querySelector("#welcome").remove()
+            }
+        }, 2500);
     }, 5000);
 };

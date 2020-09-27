@@ -13,6 +13,10 @@
     src: url('calibri.ttf')
 }
 
+* {
+    box-sizing: border-box;
+}
+
 body {
     font-size: 18px;
     font-family: 'segoe-ui', serif;

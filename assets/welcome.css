@@ -1,0 +1,18 @@
+body {
+    color: #ffffff;
+    background-position: -50px bottom;
+    background-image: url('welcome-long.png');
+    background-size: cover;
+    cursor: progress;
+}
+
+div {
+    font-size: 60px;
+    font-family: 'arial-black';
+    font-style: italic;
+    position: absolute;
+    left: 55%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    text-shadow: 2px 5px #3151B5;
+}

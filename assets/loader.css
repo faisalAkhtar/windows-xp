@@ -1,7 +1,3 @@
-* {
-    box-sizing: border-box;
-}
-
 body {
     background-color: black;
     color: #EFEFEF;
@@ -9,6 +5,7 @@ body {
     height: 100vh;
     width: 100vw;
     overflow: hidden;
+    cursor: none;
 }
 
 .centred {
