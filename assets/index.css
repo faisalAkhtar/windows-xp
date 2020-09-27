@@ -8,6 +8,11 @@
     src: url('arial-black.ttf')
 }
 
+@font-face {
+    font-family: "calibri";
+    src: url('calibri.ttf')
+}
+
 body {
     font-size: 18px;
     font-family: 'segoe-ui', serif;

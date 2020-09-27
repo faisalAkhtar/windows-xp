@@ -89,7 +89,7 @@ body {
 .time {
     height: 100%;
     float: right;
-    font-family: monospace;
+    font-family: calibri, monospace;
     font-size: 14px;
     line-height: 14px;
     background: linear-gradient(to bottom, #1290E9 0%, #19B9F3 9%, #1290E9 18%, #1290E9 92%, #1941A5 100%) center/cover no-repeat;
