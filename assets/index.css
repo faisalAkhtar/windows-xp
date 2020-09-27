@@ -9,8 +9,9 @@
 }
 
 body {
+    font-size: 18px;
+    font-family: 'segoe-ui', serif;
     margin: 0;
-    font-family: 'segoe-ui', sans-serif;
     width: 100vw;
     height: 100vh;
     background-color: black;
@@ -23,4 +24,12 @@ iframe {
     top: 0;
     left: 0;
     border: none;
+}
+
+::-moz-selection {
+    background: rgba(255, 255, 255, 0);
+}
+
+::selection {
+    background: rgba(255, 255, 255, 0);
 }

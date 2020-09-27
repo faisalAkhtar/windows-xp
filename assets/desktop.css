@@ -3,13 +3,56 @@
 }
 
 body {
-    font-size: 18px;
-    font-family: 'segoe-ui', serif;
-    margin: 0;
-    padding: 12px;
     color: #ffffff;
-    background-position: center 16.67%;
     background-size: cover;
+}
+
+.desktop {
+    position: absolute;
+    padding: 8px;
+    height: calc(100vh - 32px);
+    width: 100vw;
+    overflow: hidden;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    flex-direction: column;
+}
+
+.icon {
+    width: 100px;
+    cursor: pointer;
+    margin: 8px 0;
+    padding: 5px;
+    border: 1px solid transparent;
+}
+
+.icon img {
+    width: 54px;
+    display: block;
+    margin: 0 auto;
+}
+
+.icon .icon-name {
+    font-size: 14px;
+    line-height: 20px;
+    height: 20px;
+    width: 90px;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    text-align: center;
+}
+
+.selected {
+    background-color: #0078d777;
+    border-color: #0078d7;
+}
+
+.recycle-bin {
+    position: absolute;
+    right: 8px;
+    bottom: 16px;
 }
 
 .taskbar {
@@ -58,31 +101,9 @@ body {
     text-transform: uppercase;
 }
 
-.icon {
-    width: 90px;
-    cursor: pointer;
-    margin: 12px 0 20px;
-}
-
-.icon img {
-    width: 54px;
-    display: block;
-    margin: 0 auto;
-}
-
-.icon .icon-name {
-    font-size: 14px;
-    text-align: center;
-}
-
-.recycle-bin {
-    position: absolute;
-    right: 8px;
-    bottom: calc(32px + 16px);
-}
-
 @media (orientation: landscape) {
     body {
+        background-position: center bottom;
         background-image: url('desktop-bg.jpg');
     }
 }
