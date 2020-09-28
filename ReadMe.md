@@ -5,6 +5,9 @@ Replicating the awesome Windows XP with web tools.
 ![Windows XP splash screen](windows-xp-splash-screen.png)
 Splash screen
 
+![Windows XP welcome screen](windows-xp-welcome-screen.png)
+Welcome screen
+
 ![Windows XP desktop screen](windows-xp-desktop-screen.png)
 Desktop
 
