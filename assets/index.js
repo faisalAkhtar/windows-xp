@@ -33,6 +33,6 @@ window.onload = function() {
             iframe.onload = function () {
                 document.querySelector("#welcome").remove()
             }
-        }, 2500);
+        }, 2000);
     }, 5000);
 };

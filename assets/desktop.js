@@ -23,4 +23,8 @@ document.querySelectorAll(".icon").forEach( (icon)=>{
         }, 1);
         // alert(this.lastElementChild.innerHTML)
     }
+
+    icon.ondblclick = function() {
+        alert(this.lastElementChild.innerHTML)
+    }
 })
