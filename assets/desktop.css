@@ -66,6 +66,22 @@ body {
     border-top-right-radius: 8px;
     padding: 0 0 3px;
     background: #ffffff;
+
+    transition-duration: 0.1s;
+}
+
+.window.maximized {
+    top: 0;
+    left: 0;
+    transform: none;
+    width: 100%;
+    height: calc(100% - 32px);
+}
+
+.window.minimized {
+    top: 100%;
+    height: 0;
+    width: 0;
 }
 
 .title-bar {

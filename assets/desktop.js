@@ -24,7 +24,31 @@ document.querySelectorAll(".icon").forEach( (icon)=>{
         // alert(this.lastElementChild.innerHTML)
     }
 
-    icon.ondblclick = function() {
+    /*icon.ondblclick = function() {
         alert(this.lastElementChild.innerHTML)
-    }
+    }*/
 })
+
+document.querySelector(".max").onclick = function() {
+    document.querySelector(".window").classList.toggle("maximized")
+}
+
+document.querySelector(".min").onclick = function() {
+    document.querySelector(".readme").classList.toggle("active")
+    document.querySelector(".window").classList.toggle("minimized")
+}
+
+document.querySelector(".readme").onclick = function() {
+    document.querySelector(".readme").classList.toggle("active")
+    document.querySelector(".window").classList.toggle("minimized")
+}
+
+document.querySelector(".cls").onclick = function() {
+    document.querySelector(".readme").style.display = "none"
+    document.querySelector(".window").style.display = "none"
+}
+
+document.querySelector(".note-pad").ondblclick = function() {
+    document.querySelector(".readme").style.display = "initial"
+    document.querySelector(".window").style.display = "initial"
+}
