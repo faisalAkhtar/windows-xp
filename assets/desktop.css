@@ -21,6 +21,12 @@ body {
     margin: 8px 0;
     padding: 5px;
     border: 1px solid transparent;
+
+    -webkit-user-select: none;
+    -moz-user-select: -moz-none;
+    -ms-user-select: none;
+    user-select: none;
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
 }
 
 .icon img {
@@ -39,7 +45,14 @@ body {
     white-space: nowrap;
     text-overflow: ellipsis;
     text-align: center;
-    text-shadow: 1px 1px black;
+}
+
+.icon::selection {
+    background-color:transparent;
+} 
+
+.icon::-moz-selection {
+    background-color:transparent;
 }
 
 .selected {

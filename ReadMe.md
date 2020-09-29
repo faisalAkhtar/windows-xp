@@ -6,8 +6,6 @@
 
 A replication of the awesome Windows-XP made by using only the web tools and no library. All rights reserved to <a href="https://www.microsoft.com/en-in">Microsoft&reg;</a>
 
-<img src="small-ss.png" alt="Windows XP" width="500">
-
 
 ## Features
 
