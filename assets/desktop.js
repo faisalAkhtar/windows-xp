@@ -60,6 +60,8 @@ document.querySelector(".note-pad").ondblclick = function () {
     document.querySelector(".window").style.display = "initial"
 }
 
+document.querySelector("textarea").value = "Hello World!\n\nFeatures:\n- Desktop icons are clickable. Double clicking them takes you to some of my links (github, twitter, portfolio).\n- Time in system-tray is your system's time.\n- This window is draggable, closable, minimizable and maximizable. Try it.\n- The opened tabs in taskbar also take you to my links, same as the icons.\n______________________________\n\nThe code is on github. Star the repository if you liked this. Contributions to this repository are welcome and appreciated.\n______________________________\n\nDo follow me on github (@faisalakhtar) and twitter(@faisallakhtarr). Open 'My Computer' and 'My Network' to go to these links.\n"
+
 
 dragWindow(document.querySelector(".window"));
 function dragWindow(elmnt) {
