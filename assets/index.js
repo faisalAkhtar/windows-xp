@@ -32,6 +32,11 @@ window.onload = function() {
     
             iframe.onload = function () {
                 document.querySelector("#welcome").remove()
+
+                var meta = document.createElement('meta');
+                meta.name = "viewport";
+                meta.content = "width=device-width,initial-scale=1,maximum-scale=1.0,user-scalable=no";
+                document.head.appendChild(meta);
             }
         }, 2000);
     }, 5000);

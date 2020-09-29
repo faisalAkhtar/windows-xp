@@ -39,6 +39,7 @@ body {
     white-space: nowrap;
     text-overflow: ellipsis;
     text-align: center;
+    text-shadow: 1px 1px black;
 }
 
 .selected {
@@ -58,8 +59,10 @@ body {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    width: 500px;
-    height: 400px;
+    max-width: 500px;
+    max-height: 400px;
+    width: calc(100% - 50px);
+    height: calc(100% - 100px);
 
     box-shadow: inset -1px -1px #00138c, inset 1px 1px #0831d9, inset -2px -2px #001ea0, inset 2px 2px #166aee, inset -3px -3px #003bda, inset 3px 3px #0855dd;
     border-top-left-radius: 8px;
@@ -76,6 +79,8 @@ body {
     transform: none;
     width: 100%;
     height: calc(100% - 32px);
+    max-width: unset;
+    max-height: unset;
 }
 
 .window.minimized {
@@ -215,6 +220,11 @@ textarea {
     transform: translateY(4px);
 }
 
+.opened-tabs {
+    width: calc(100% - 225px);
+    float: left;
+}
+
 .open-tab {
     width: 150px;
     height: 26px;
@@ -275,5 +285,23 @@ textarea {
 @media (orientation: portrait) {
     body {
         background-image: url('desktop-bg-portrait.jpg');
+    }
+}
+
+@media screen and (max-width:825px) {
+    .open-tab:nth-child(3) {
+        display: none;
+    }
+}
+
+@media screen and (max-width:675px) {
+    .open-tab:nth-child(1) {
+        display: none;
+    }
+}
+
+@media screen and (max-width:525px) {
+    .open-tab:nth-child(2) {
+        display: none;
     }
 }
