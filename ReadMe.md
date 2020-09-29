@@ -1,18 +1,86 @@
+![Windows XP Logo](assets/logo.svg)
+
 # Windows XP
 
-Replicating the awesome Windows XP with web tools.
+[![License](https://img.shields.io/badge/license-Mozilla%20Public%20License%20Version%202.0-blue?logo=mozilla)](LICENSE)
 
-![Windows XP splash screen](windows-xp-splash-screen.png)
-Splash screen
+A replication of the awesome Windows-XP made by using only the web tools and no library. All rights reserved to <a href="https://www.microsoft.com/en-in">Microsoft&reg;</a>
 
-![Windows XP welcome screen](windows-xp-welcome-screen.png)
-Welcome screen
+<img src="small-ss.png" alt="Windows XP" width="500">
 
-![Windows XP desktop screen](windows-xp-desktop-screen.png)
-Desktop
 
-All rights reserved to [Microsoft&reg;](https://www.microsoft.com/en-in)
+## Features
 
-## [![License](https://img.shields.io/badge/license-Mozilla%20Public%20License%20Version%202.0-brightGreen?style=for-the-badge&logo=mozilla)](LICENSE)
+<table>
+  <tr>
+    <td><h3>SNo</h3></td>
+    <td><h3 align="center">Screenshots</h3></td>
+  </tr>
 
-### Made with &hearts; and :sparkles:HTML5:sparkles:+:sparkles:CSS3:sparkles:+:sparkles:JS:sparkles:
+  <tr>
+    <td>1.</td>
+    <td>
+      <p align="center">
+      <img src="windows-xp-splash-screen.png" title="Splash Screen" alt="Splash Screen" />
+      <br />
+      Splash Screen
+      </p>
+    </td>
+  </tr>
+  <tr>
+    <td>2.</td>
+    <td>
+      <p align="center">
+      <img src="windows-xp-welcome-screen.png" title="Welcome Screen" alt="Welcome Screen" />
+      <br />
+      Welcome Screen
+      </p>
+    </td>
+  </tr>
+
+  <tr>
+    <td>3.</td>
+    <td>
+      <p align="center">
+      <img src="windows-xp-desktop-screen.png" title="Desktop" alt="Desktop" />
+      <br />
+      Desktop
+      </p>
+    </td>
+  </tr>
+  <tr>
+
+  <td>4.</td>
+    <td>
+      <p align="center">
+      <img src="windows-xp-notepad.png" title="Notepad" alt="Notepad" />
+      <br />
+      Notepad
+      </p>
+    </td>
+  </tr>
+</table>
+
+
+## Contributing
+
+### Step 1
+- Option 1
+  - :fork_and_knife: Fork this repository
+- Option 2
+  -  :dancers: Clone this repo to your local machine using ```git clone https://github.com/faisalakhtar/windows-xp.git```
+
+### Step 2
+- **HACK AWAY** :hammer: :hammer: :hammer:
+
+### Step 3
+- :repeat: Create a pull request using https://github.com/faisalakhtar/windows-xp/compare/
+
+
+## License
+
+[![License](https://img.shields.io/badge/license-Mozilla%20Public%20License%20Version%202.0-blue?logo=mozilla)](LICENSE)
+
+Full license: [Mozilla Public License V2.0](LICENSE)
+
+Translation: Ofcourse you can use this for you project! Just make sure to say where you got this from :)
