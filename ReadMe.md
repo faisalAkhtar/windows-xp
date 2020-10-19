@@ -63,15 +63,15 @@ A replication of the awesome Windows-XP made by using only the web tools and no 
 ## Contributing
 
 ### Step 1
-- Option 1
-  - :fork_and_knife: Fork this repository
-- Option 2
-  -  :dancers: Clone this repo to your local machine using ```git clone https://github.com/faisalakhtar/windows-xp.git```
+- :fork_and_knife: Fork this repository
 
 ### Step 2
-- **HACK AWAY** :hammer: :hammer: :hammer:
+- :dancers: Clone this repo to your local machine using ```git clone https://github.com/faisalakhtar/windows-xp.git```
 
 ### Step 3
+- **HACK AWAY** :hammer: :hammer: :hammer:
+
+### Step 4
 - :repeat: Create a pull request using https://github.com/faisalakhtar/windows-xp/compare/
 
 
