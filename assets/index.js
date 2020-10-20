@@ -26,7 +26,8 @@ window.onload = function() {
         setTimeout(() => {
             iframe = document.createElement("iframe");
             iframe.id = "desktop"
-            iframe.src = "desktop.html"
+            //iframe.src = "desktop.html"
+            iframe.src = "desktop-ie.html"
             iframe.title = "Desktop"
             document.querySelector("body").prepend(iframe);
     
