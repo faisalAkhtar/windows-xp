@@ -89,7 +89,7 @@ body {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    max-width: 500px;
+    max-width: 900px;
     max-height: 400px;
     width: calc(100% - 50px);
     height: calc(100% - 100px);
@@ -104,13 +104,13 @@ body {
 }
 
 .window.maximized {
-    top: 0;
-    left: 0;
-    transform: none;
+    top: 50vh;
+    left: 50vw;
+    position: relative;
+    max-width: none;
+    max-height: none;
+    min-height: 100%;
     width: 100%;
-    height: calc(100% - 32px);
-    max-width: unset;
-    max-height: unset;
 }
 
 .window.minimized {
@@ -304,6 +304,30 @@ textarea {
     cursor: pointer;
     text-transform: uppercase;
 }
+
+.window.minimized .title-bar,
+.window.minimized .title-bar div,
+.window.minimized .title-bar button, 
+.window.minimized .title-bar img,
+.window.minimized .menu-bar,
+.window.minimized .menu-bar span,
+.window.minimized .html-text-view,
+.window.minimized code, 
+.window.minimized .html-text-url,
+.window.minimized .controls,
+.window.minimized .controls button {
+    height: 0;
+    width: 0; 
+    min-height: 0;
+    min-width: 0;
+    max-height: 0;
+    max-width: 0;
+    border: none; 
+    padding: 0;
+    margin: 0;
+    text-shadow: none; 
+    font-size: 0; 
+} 
 
 @media (orientation: landscape) {
     body {
