@@ -71,36 +71,63 @@ document.querySelector("textarea").value = "<!DOCTYPE html>\n<html>\n<body>\n\n<
 
 dragWindow(document.querySelector(".window"));
 function dragWindow(elmnt) {
-    var pos1 = 0, pos2 = 0, pos3 = 0, pos4 = 0;
+var offset = [0,0];
+var isDown = false;
 
-    document.querySelector(".title-bar").onmousedown = dragging
+ elmnt.addEventListener('mousedown', function(e) {
+                  event.preventDefault();
+                  event = event || window.event; // IE-ism
 
-    function dragging(e) {
-        e = e || window.event;
-        e.preventDefault();
+                  // If pageX/Y aren't available and clientX/Y are,
+                  // calculate pageX/Y - logic taken from jQuery.
+                  // (This is to support old IE)
+                  if (event.pageX == null && event.clientX != null) {
+                      eventDoc = (event.target && event.target.ownerDocument) || document;
+                      doc = eventDoc.documentElement;
+                      body = eventDoc.body;
+            
+                      event.pageX = event.clientX +
+                        (doc && doc.scrollLeft || body && body.scrollLeft || 0) -
+                        (doc && doc.clientLeft || body && body.clientLeft || 0);
+                      event.pageY = event.clientY +
+                        (doc && doc.scrollTop  || body && body.scrollTop  || 0) -
+                        (doc && doc.clientTop  || body && body.clientTop  || 0 );
+                  }
+          isDown = true;
+          offset = [
+              elmnt.offsetLeft - e.pageX,
+              elmnt.offsetTop - e.pageY
+          ];
+      }, true);
+  
+        document.addEventListener('mousemove', function(e) {
+                    event.preventDefault();
+                    event = event || window.event; // IE-ism
 
-        pos3 = e.clientX;
-        pos4 = e.clientY;
+                    // If pageX/Y aren't available and clientX/Y are,
+                    // calculate pageX/Y - logic taken from jQuery.
+                    // (This is to support old IE)
+                    if (event.pageX == null && event.clientX != null) {
+                        eventDoc = (event.target && event.target.ownerDocument) || document;
+                        doc = eventDoc.documentElement;
+                        body = eventDoc.body;
+              
+                        event.pageX = event.clientX +
+                          (doc && doc.scrollLeft || body && body.scrollLeft || 0) -
+                          (doc && doc.clientLeft || body && body.clientLeft || 0);
+                        event.pageY = event.clientY +
+                          (doc && doc.scrollTop  || body && body.scrollTop  || 0) -
+                          (doc && doc.clientTop  || body && body.clientTop  || 0 );
+                    }
 
-        document.onmouseup = stopDragging;
-        document.onmousemove = draggedWindow;
-    }
+            if (isDown) {
+                elmnt.style.left = (e.pageX + offset[0]) + 'px';
+                elmnt.style.top  = (e.pageY + offset[1]) + 'px';
+                event.currentTarget.removeEventListener();
+            }
+        }, true);
 
-    function draggedWindow(e) {
-        e = e || window.event;
-        e.preventDefault();
-
-        pos1 = pos3 - e.clientX;
-        pos2 = pos4 - e.clientY;
-        pos3 = e.clientX;
-        pos4 = e.clientY;
-
-        elmnt.style.top = (elmnt.offsetTop - pos2) + "px";
-        elmnt.style.left = (elmnt.offsetLeft - pos1) + "px";
-    }
-
-    function stopDragging() {
-        document.onmouseup = null;
-        document.onmousemove = null;
-    }
+        document.addEventListener('mouseup', function() {
+              isDown = false;
+        }, true);
 }
