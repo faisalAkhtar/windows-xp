@@ -21,7 +21,7 @@ A replication of the awesome Windows-XP made by using only the web tools and no 
       <p align="center">
       <img src="windows-xp-splash-screen.png" title="Splash Screen" alt="Splash Screen" />
       <br />
-      Splash Screen
+     
       </p>
     </td>
   </tr>
