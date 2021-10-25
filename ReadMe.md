@@ -1,13 +1,19 @@
-![Windows XP Logo](assets/logo.svg)
+<p align="center">
+  <img alt="Windows XP Logo" src="assets/logo.svg">
+</p>
 
-# Windows XP
+<h1 align="center">Windows XP</h1>
 
-[![License](https://img.shields.io/badge/license-Mozilla%20Public%20License%20Version%202.0-blue?logo=mozilla)](LICENSE)
+<p align="center">
+  <a href="LICENSE">
+  <img alt="LICENSE" src="https://img.shields.io/badge/license-Mozilla%20Public%20License%20Version%202.0-blue?logo=mozilla">
+  </a>
+</p>
 
-A replication of the awesome Windows-XP made by using only the web tools and no library. All rights reserved to <a href="https://www.microsoft.com/en-in">Microsoft&reg;</a>
+A replication of the awesome Windows-XP in your browser made by using only the web tools and no library. All rights reserved to <a href="https://www.microsoft.com/en-in">Microsoft&reg;</a>
 
 
-## Features
+<h2 align="center">Features</h2>
 
 <table>
   <tr>
@@ -81,4 +87,9 @@ A replication of the awesome Windows-XP made by using only the web tools and no 
 
 Full license: [Mozilla Public License V2.0](LICENSE)
 
-Translation: Ofcourse you can use this for you project! Just make sure to say where you got this from :)
+Translation: _Ofcourse you can use this for you project! Just make sure to say where you got this from :)_
+
+
+## Acknowledgement
+
+This simulation of the windows-XP is made purely for educational purpose and not for any kind of personal profiteering. I don't own it neither do I have any links to it at the moment. All rights reserved to windows-XP are to Microsoft &copy;.
